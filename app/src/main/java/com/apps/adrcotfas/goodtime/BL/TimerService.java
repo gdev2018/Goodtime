@@ -224,7 +224,8 @@ public class TimerService extends LifecycleService {
             }
         }
 
-        mRingtoneAndVibrationPlayer.play(sessionType, PreferenceHelper.isRingtoneInsistent());
+        //todo uncomment after testing
+//       mRingtoneAndVibrationPlayer.play(sessionType, PreferenceHelper.isRingtoneInsistent());
         stopForeground(true);
 
         updateLongBreakStreak(sessionType);

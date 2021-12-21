@@ -60,7 +60,8 @@ public class CurrentSessionManager extends ContextWrapper{
     public void startTimer(SessionType sessionType) {
         Log.v(TAG, "startTimer: " + sessionType.toString());
 
-        mSessionDuration =  TimeUnit.MINUTES.toMillis(PreferenceHelper.getSessionDuration(sessionType));
+//        mSessionDuration =  TimeUnit.MINUTES.toMillis(PreferenceHelper.getSessionDuration(sessionType));
+        mSessionDuration =  5000;
 
         mCurrentSession.setTimerState(TimerState.ACTIVE);
         mCurrentSession.setSessionType(sessionType);
